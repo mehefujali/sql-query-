@@ -72,4 +72,4 @@ SELECT * FROM "user"
 
 
 SELECT title , username FROM post
-JOIN "user"
+JOIN "user" ON post.user_id  = "user".id
