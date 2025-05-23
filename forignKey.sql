@@ -52,10 +52,24 @@ INSERT INTO post (title, user_id) VALUES
 
 
 
-SELECT * FROM post
+
 
 
 INSERT INTO "user" (username) 
  VALUES 
  ('newUser1')
 
+
+
+
+
+
+
+
+SELECT * FROM post
+
+SELECT * FROM "user"
+
+
+SELECT title , username FROM post
+JOIN "user"
