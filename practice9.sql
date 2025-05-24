@@ -90,3 +90,7 @@ GROUP BY (department_name)
 ORDER BY avg_salary DESC 
 LIMIT 1
 
+
+SELECT extract(YEAR FROM hire_date) as hire_year , count(*) FROM employees
+GROUP BY hire_year
+
