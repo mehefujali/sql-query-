@@ -74,4 +74,19 @@ INSERT INTO employees (employee_name, department_id, salary, hire_date) VALUES
     JOIN employees USING(department_id)
 
 
-    
+    SELECT department_name,round(avg(salary)) as avg_salary FROM departments
+    JOIN employees USING(department_id) GROUP BY department_name
+
+
+ SELECT department_name,count(*) FROM departments
+ JOIN employees  USING(department_id)
+ GROUP BY (department_id) 
+
+
+
+SELECT department_name,round(avg(salary)) as avg_salary FROM departments 
+JOIN employees USING(department_id)
+GROUP BY (department_name) 
+ORDER BY avg_salary DESC 
+LIMIT 1
+
